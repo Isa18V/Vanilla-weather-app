@@ -1,0 +1,26 @@
+#container {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 20px auto;
+  text-align: center;
+  background-color: white;
+  border: 1px solid black;
+}
+
+#container img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.blurBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: blur(10px);
+  z-index: -1;
+}
