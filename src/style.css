@@ -3,15 +3,8 @@
   max-width: 800px;
   height: auto;
   margin: 20px auto;
-  text-align: center;
   background-color: white;
   border: 1px solid black;
-}
-
-#container img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
 }
 
 .blurBackground {
@@ -21,6 +14,6 @@
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  filter: blur(10px);
+  filter: blur(10px) brightness(0.5);
   z-index: -1;
 }
