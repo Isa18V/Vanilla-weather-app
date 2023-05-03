@@ -1,22 +1,42 @@
 body {
-  background-color: rgb(70, 4, 4);
+  height: 100vh;
+  background-color: rgb(114, 80, 105);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #container {
+  color: rgb(55, 44, 44);
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 800px;
-  height: auto;
+  height: 600px;
   margin: 20px auto;
   background-color: white;
-  border: 1px solid black;
+  background-image: url("../images/pinkSky.jpg");
+  background: center/cover url("../images/pinkSky.jpg") no-repeat;
+  border: 1px solid rgb(158, 126, 126);
+  padding: 20px;
 }
 
 .blurBackground {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  filter: blur(10px) brightness(0.4);
+  filter: blur(20px);
   z-index: -1;
+}
+
+.degreeCurrentWeatherStatus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+.degreeCurrentNumber {
+  font-weight: 600;
+  font-size: 250%;
 }
