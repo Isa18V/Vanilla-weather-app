@@ -10,22 +10,34 @@ li {
   list-style-type: none;
   line-height: 2;
 }
+h1 {
+  border: 5px ridge #ebcece;
+  background: #ebcece;
+  max-width: fit-content;
+  padding: 5px;
+}
 #container {
-  color: rgb(55, 44, 44);
+  color: rgb(255, 255, 255);
   justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 800px;
   height: 600px;
   margin: 20px auto;
-  background-color: white;
-  background-image: url("../images/pinkSky.jpg");
-  background: center/cover url("../images/pinkSky.jpg") no-repeat;
+  background-color: rgb(255, 239, 239);
   border: 1px solid rgb(158, 126, 126);
   padding: 20px;
 }
-.descriptionList {
+
+.list {
   padding-left: 0;
+}
+.descriptionOffTodayImage {
+  background-color: #ebcece;
+  border-radius: 10px;
+}
+.description {
+  padding-left: 20px;
 }
 .blurBackground {
   position: fixed;
@@ -42,6 +54,8 @@ li {
   align-items: center;
   padding: 0;
   text-align: center;
+  background-color: #ebcece;
+  border-radius: 10px;
 }
 .degreeCurrentNumber {
   font-weight: 600;
