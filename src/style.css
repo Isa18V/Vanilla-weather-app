@@ -117,22 +117,38 @@ form:valid a {
 /* END  search engine  */
 
 .list {
-  padding-left: 0;
+  list-style: none;
+  padding: 0;
+}
+.description1 {
   background-color: #ebcece;
   border-radius: 10px;
-  padding-left: 10px;
-  display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
-
+.description2 {
+  background-color: #ebcece;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.description3 {
+  background-color: #ebcece;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
 .descriptionOffTodayImage {
   background-color: #ebcece;
   border-radius: 10px;
 }
-.description {
-  padding-left: 20px;
-}
+
 .blurBackground {
   position: fixed;
   width: 100vw;

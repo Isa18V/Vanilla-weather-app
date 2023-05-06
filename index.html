@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
     <!-- css -->
@@ -26,6 +28,7 @@
                     City name
                 </h1>
             </div>
+            <!-- START search engine -->
             <div class="col-6">
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
                     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
@@ -34,30 +37,28 @@
                 <form action="">
                     <input type="search" required>
                     <i class="fa fa-search"></i>
-
                 </form>
             </div>
+            <!-- END search engine -->
         </div>
 
-        <!-- START search engine -->
-
-        <!-- END search engine -->
         <!-- START END row with 2 colmns left and right -->
         <div class="row">
             <!-- S colmn left -->
             <div class="col-lg-6 col-md-12">
                 <ul class="list">
-                    <li>Monday 20:00, Clouds</li>
-                    <li class="description"> <strong>Humidity</strong>: 20%</li>
-                    <li class="description"> <strong>Wind</strong>: 4km/h</li>
+                    <li class="description1">Monday 20:00, Clouds</li>
+                    <li class="description2"> <strong>Humidity</strong>: 20%</li>
+                    <li class="description3"> <strong>Wind</strong>: 4km/h</li>
                 </ul>
             </div>
             <!-- E colmn left -->
             <!-- S colmn right -->
-            <div class="col-lg-6 col-md-12 ">
-                <div class="row">
-                    <div class="col-6 descriptionOffTodayImage">
-                        <img src="images/clouds.png" alt="descriptionIcon" style="max-width: 100%;">
+            <div class="col-lg-6 col-md-12">
+                <div class="row ">
+                    <div class="col-6  ">
+                        <img src="images/clouds.png" class="descriptionOffTodayImage" alt="descriptionIcon"
+                            style="max-width: 100%;">
                     </div>
                     <div class="col-6 degreeCurrentWeatherStatus">
                         <span class="degreeCurrentNumber">17</span> <span>C°</span>
