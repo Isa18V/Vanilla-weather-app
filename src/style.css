@@ -33,8 +33,12 @@ h1 {
   margin: 20px auto;
   background-color: rgb(255, 239, 239);
   border: 1px solid rgb(158, 126, 126);
-  padding: 20px;
+  padding: 25px;
   border-radius: 20px;
+}
+.searchEngine {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* START search engine  */
@@ -162,16 +166,20 @@ form:valid .fa {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 0;
+  padding: 10px;
   text-align: center;
   background-color: #ebcece;
   border-radius: 10px;
   font-size: large;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .imageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .degreeCurrentNumber {
   font-weight: 900;
@@ -183,6 +191,8 @@ form:valid .fa {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .buttonCurrent {
   align-items: center;
@@ -243,8 +253,19 @@ form:valid .fa {
   color: rgb(114, 80, 105);
 }
 /* START forcast part */
-.forcastRow {
-  margin-left: 25px;
-  margin-right: 25px;
+.weather-forecast {
+  width: 100%;
 }
+
+.weather-forecast .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-forecast .row .col {
+  text-align: center;
+  background-color: #ebcece;
+}
+
 /* END forcast part */
