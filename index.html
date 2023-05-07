@@ -24,7 +24,7 @@
     <div id="container">
         <div class="row">
             <div class="col-6 containerCityName">
-                <h1>
+                <h1 id="cityName">
                     City name
                 </h1>
             </div>
@@ -34,8 +34,8 @@
                     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
                     crossorigin="anonymous">
 
-                <form action="">
-                    <input type="search" required>
+                <form id="search-form" action="">
+                    <input id="search-input" type="search" required>
                     <i class="fa fa-search"></i>
                 </form>
             </div>
@@ -47,9 +47,10 @@
             <!-- S colmn left -->
             <div class="col-lg-6 col-md-12">
                 <ul class="list">
-                    <li class="description1">Monday 20:00, Clouds</li>
-                    <li class="description2"> <strong>Humidity</strong>: 20%</li>
-                    <li class="description3"> <strong>Wind</strong>: 4km/h</li>
+                    <li class="description1"> <span id="date">Monday 20:00</span>, <span id="description">Clouds</span>
+                    </li>
+                    <li class="description2"> <strong>Humidity</strong>: <span id="humidity">20</span>%</li>
+                    <li class="description3"> <strong>Wind</strong>: <span id="wind">4</span>km/h</li>
                 </ul>
             </div>
             <!-- E colmn left -->
@@ -61,7 +62,7 @@
                             style="max-width: 100%;">
                     </div>
                     <div class="col-6 degreeCurrentWeatherStatus">
-                        <span class="degreeCurrentNumber">17</span> <span>C°</span>
+                        <span id="temperature" class="degreeCurrentNumber">17</span> <span>C°</span>
                     </div>
                 </div>
             </div>
