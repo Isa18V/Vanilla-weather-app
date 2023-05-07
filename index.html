@@ -23,21 +23,28 @@
     <!-- START container -->
     <div id="container">
         <div class="row">
-            <div class="col-6 containerCityName">
+            <div class="col-lg-6 col-md-12 containerCityName">
                 <h1 id="cityName">
                     City name
                 </h1>
             </div>
             <!-- START search engine -->
-            <div class="col-6">
-                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-                    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-                    crossorigin="anonymous">
+            <div class="col-lg-6 col-md-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+                            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+                            crossorigin="anonymous">
 
-                <form id="search-form" action="">
-                    <input id="search-input" type="search" required>
-                    <i class="fa fa-search"></i>
-                </form>
+                        <form id="search-form" action="">
+                            <input id="search-input" type="search" required>
+                            <i class="fa fa-search"></i>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-md-12 currentButtonCenter">
+                        <button id="current-button" class="buttonCurrent" role="button">Current</button>
+                    </div>
+                </div>
             </div>
             <!-- END search engine -->
         </div>
