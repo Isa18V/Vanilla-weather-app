@@ -133,6 +133,20 @@ form:valid .fa {
   background-color: #ebcece;
   border-radius: 10px;
 }
+/* START here is c°/f° */
+.active {
+  text-decoration: none;
+}
+.units a {
+  color: rgb(33, 33, 33);
+  cursor: pointer;
+}
+
+.units a:hover {
+  color: #7e5353;
+  text-decoration: underline;
+}
+/* END here is c°/f° */
 
 .blurBackground {
   position: fixed;
