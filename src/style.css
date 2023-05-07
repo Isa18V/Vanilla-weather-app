@@ -170,10 +170,16 @@ form:valid a {
   border-radius: 10px;
   font-size: large;
 }
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .degreeCurrentNumber {
   font-weight: 900;
   font-size: 250%;
 }
+
 /* START button CURRENT*/
 .currentButtonCenter {
   display: flex;
