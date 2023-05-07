@@ -35,6 +35,7 @@ function displayWeather(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  celsiusTemperature = response.data.main.temp;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
@@ -79,7 +80,39 @@ let locationPin = document.querySelector(`#current-button`);
 locationPin.addEventListener("click", getLocation);
 // END get geolocation
 
+// START function show F°
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
+}
+// END function show F°
+
+// START function show F°
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+// END function show F°
+
 //START the submit or click
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchEngine);
 //END the submit or click
+
+// START F°
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+// END F°
+
+// START C°
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
+// END C°

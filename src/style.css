@@ -140,10 +140,11 @@ form:valid .fa {
 .units a {
   color: rgb(33, 33, 33);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .units a:hover {
-  color: #7e5353;
+  color: #b65555;
   text-decoration: underline;
 }
 /* END here is c°/f° */
