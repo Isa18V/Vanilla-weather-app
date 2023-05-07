@@ -162,7 +162,7 @@ form:valid .fa {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding-right: 0;
   text-align: center;
   background-color: #ebcece;
   border-radius: 10px;
@@ -242,3 +242,9 @@ form:valid .fa {
   margin-right: 5px;
   color: rgb(114, 80, 105);
 }
+/* START forcast part */
+.forcastRow {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+/* END forcast part */
