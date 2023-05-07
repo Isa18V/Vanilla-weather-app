@@ -255,17 +255,21 @@ form:valid .fa {
 /* START forcast part */
 .weather-forecast {
   width: 100%;
+  background-color: #b39f9f;
+  border-radius: 10px;
 }
 
 .weather-forecast .row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-.weather-forecast .row .col {
+.weather-forecast .row .col-2 {
   text-align: center;
   background-color: #ebcece;
+  border-radius: 10px;
+  border: 1px solid rgb(158, 126, 126);
 }
 
 /* END forcast part */
