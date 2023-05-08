@@ -138,18 +138,9 @@ form:valid .fa {
   border-radius: 10px;
 }
 /* START here is c°/f° */
-.active {
-  text-decoration: none;
-}
 .units a {
-  color: rgb(33, 33, 33);
-  cursor: pointer;
+  color: #000000;
   text-decoration: none;
-}
-
-.units a:hover {
-  color: #b65555;
-  text-decoration: underline;
 }
 /* END here is c°/f° */
 
